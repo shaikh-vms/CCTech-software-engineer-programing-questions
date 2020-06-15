@@ -17,7 +17,8 @@ public class PointInPolygonCheckFunction {
 		}
 	}
 
-	boolean isInside(CreatedPoint polygon[], int n, CreatedPoint pointToCheck) {
+	boolean isInside(CreatedPoint polygon[], CreatedPoint pointToCheck) {
+		int n= polygon.length;
 		if (n < 3) {
 			return false;
 		}
